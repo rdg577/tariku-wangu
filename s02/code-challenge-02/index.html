@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge 2</title>
+</head>
+<body>
+    <table border="3" cellpadding="10">
+        <thead>
+            <th>Qty</th>
+            <th>Item</th>
+            <th>Initial Cost</th>
+            <th>Final Cost</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>Apple</td>
+                <td>$1.00</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td colspan="4">Subtotal</td>
+            </tr>
+            <tr>
+                <td colspan="4">Subtotal <i>10% VAT</i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <form action="" method="get">
+            <label for="batch">Batch Number:</label>
+            <select name="batch" id="batch">
+                <option value="" selected>Select</option>
+                <option value="b1">Batch 1</option>
+                <option value="b2">Batch 2</option>
+                <option value="b3">Batch 3</option>
+            </select>
+        </form>
+    </p>
+
+    <p>
+        <form action="">
+            <p>
+                <label for="fname">Firstname:</label>
+                <input type="text" name="fname" id="fname" required size="50" placeholder="Enter your firstname">
+            </p>
+            <p>
+                <label for="lname">Firstname:</label>
+                <input type="text" name="lname" id="lname" required size="50" placeholder="Enter your lastname">
+            </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Enter valid email" size="50">
+            </p>
+        </form>
+    </p>
+</body>
+</html>

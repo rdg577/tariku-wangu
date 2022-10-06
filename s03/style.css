@@ -1,0 +1,100 @@
+/* Universal selector */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: brown;
+}
+
+/* ID selector */
+#title-1 {
+    color: #012456;
+}
+
+/* Class selector */
+.title-2 {
+    color: violet;
+    text-align: center;
+}
+
+/* Attribute selector */
+input[placeholder] {
+    font-weight: lighter;
+}
+
+[type="text"] {
+    background-color: aquamarine;
+}
+
+/**** Combinator selector ****/
+/*
+ Descendant selector - select/targets all elements 
+    syntax:  first element child element { ..}
+*/
+/* div p {
+    background-color: red;
+} */
+
+/* 
+    Child selector
+*/
+/* div > p {
+    background-color: chocolate;
+} */
+
+/* 
+    Adjacent sibling (+)
+        - targets an element that is directly after the first selector
+ */
+ /* p + p {
+    background-color: maroon;
+ } */
+
+ /* div + p {
+    background-color: #e228bd;
+ } */
+
+ /* general */
+ /* p ~ p {
+    background-color: fuchsia;
+ } */
+
+ /* Medium devices (landscape tablet, 768px and up) */
+@media only screen and (min-width: 500px) {
+    .screen {
+        background-color: pink;
+    }
+}
+
+/* Large devices (laptops and desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+    .screen {
+        background-color: blue;
+    }
+}
+
+/**** 
+    Pseudo Selector 
+        selector: pseudo-class {property: value}
+****/
+
+/* Unlisted link */
+a:link {
+    color: red;
+}
+
+/* Visited link */
+a:visited {
+    color: green;
+}
+
+/* Mouse-over link */
+a:hover {
+    color: orange;
+}
+
+/* Selected link */
+a:active {
+    color: dodgerblue;
+}
