@@ -98,3 +98,28 @@ a:hover {
 a:active {
     color: dodgerblue;
 }
+
+/* Pseudo Elements */
+p::first-line {
+    color: red;
+}
+
+p::first-letter {
+    color: brown;
+    font-size: 200%;
+}
+
+/* manipulating pictures */
+#my-eyes img {
+    width: 10%;
+    height: 10%;
+    border-radius: 4px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul > li {
+    letter-spacing: 4px;
+}
