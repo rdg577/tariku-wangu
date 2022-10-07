@@ -26,12 +26,10 @@ h1 {
     border-radius: 50%;
 }
 
-li {
-    list-style-type: none;
-}
 
 ul > li {
     letter-spacing: 4px;
+    list-style-type: none;
 }
 
 #quote {
