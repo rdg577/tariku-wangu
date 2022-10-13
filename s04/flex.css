@@ -1,0 +1,53 @@
+/* 
+- one dimensional layout
+    - row
+    - column
+
+    display: flex;
+        - justify-content
+        - flex-direction
+        - flex-wrap
+        - align-items
+
+*/
+.flex-container {
+    background-color: lightblue;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+
+    display: flex;
+
+    /*
+     justify content flex property 
+    */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* 
+     flex direction flex property
+    */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* 
+     flex wrap
+    */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* 
+     align-items
+    */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+}

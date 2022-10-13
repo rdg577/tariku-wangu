@@ -1,0 +1,56 @@
+body {
+    /* background-color: black; */
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header { 
+    height: 150px;
+    width: 1000px;
+
+    background-color: mediumaquamarine;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+.header .logo {
+    padding: 5px 5px;
+    height: 50px;
+    width: 250px;
+
+    border: 1px solid blue;
+    border-radius: 5px;
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.header .top-nav {
+    padding: 5px 5px;
+    height: 50px;
+    width: 250px;
+
+    border: 1px solid blue;
+    border-radius: 5px;
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.header .menu {
+    padding: 5px 5px;
+    height: 50px;
+    width: 690px;
+
+    border: 1px solid blue;
+    border-radius: 5px;
+    
+    position: absolute;
+    top: 80px;
+    /* left: 30%; */
+    right: 10px;
+}
