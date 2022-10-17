@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css" type="text/css" />
+    <title>Image Responsiveness</title>
+</head>
+<body>
+    <h1>Image Responsiveness</h1>
+    <img src="hard.png" alt="Hard Drinks" id="responsive" />
+
+    <!-- photo in modal and responsive -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // reference to modal
+        var modal = document.getElementById('myModal');
+
+        var img = document.getElementById('responsive');
+
+        var modalImg = document.getElementById('img01');
+
+        var captionText = document.getElementById('img01');
+
+        // initialize the variable img
+        img.onclick = function() {
+            modal.style.display = "block";
+
+            modalImg.src = this.src;
+
+            captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName('close')[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
