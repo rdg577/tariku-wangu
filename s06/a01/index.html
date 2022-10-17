@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Media Queries Assignment</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="brand-title">MedQue</div>
+        <div class="nav-bar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <a href="#" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+      </nav>
+    </header>
+    <script>
+        const hamburger = document.getElementsByClassName('hamburger')[0]
+const navbarLinks = document.getElementsByClassName('nav-bar-links')[0]
+
+hamburger.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+    </script>
+  </body>
+</html>
