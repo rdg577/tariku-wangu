@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fuzzy+Bubbles&display=swap");
+
+// variables
+$darker     : #262220;
+$dark       : #a15c38;
+$light      : #c3a6a0;
+$lighter    : #f7f1f0;
+
+body {
+    color: $darker;
+    background-color: $lighter;
+    font-family: Arimo;
+}
+
+.navbar {
+    font-size: larger;
+    background-color: $lighter;
+
+    & .navbar-nav .nav-item {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+section {
+    height: 800px;
+}
+
+#about-me {
+    font-family: Fuzzy Bubbles;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    color: $lighter;
+    background-color: $darker;
+
+    & p {
+        padding-bottom: 5rem;
+    }
+}
+
+footer {
+    background-color: $dark;
+}
