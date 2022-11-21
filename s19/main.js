@@ -1,5 +1,3 @@
-const funcKilogramsToPounds = (_kg = 1) => _kg * 2.20462262;
-
 class Tao {
 
     constructor (_name, _kgWeight) {
@@ -7,8 +5,10 @@ class Tao {
         this.kgWeight = _kgWeight;
     }
 
+    funcKilogramsToPounds = (_kg = 1) => _kg * 2.20462262;
+
     weightInPounds() {
-        return funcKilogramsToPounds(this.kgWeight);
+        return this.funcKilogramsToPounds(this.kgWeight);
     }
 
     weightMessage() {
